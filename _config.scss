@@ -2,7 +2,7 @@
 $pri-color: rgb(61, 61, 61);
 $sec-color: #537ff7;
 $home-image: url(../img/background2.jpg);
-$show-home-img: false;
+$show-home-img: true;
 $background-overlay-opacity: 0.9;
 
 /* //Random bilde for hver gang scss kompileres.
@@ -19,7 +19,7 @@ $img: nth($imagesarray, random(length($imagesarray)));
 
 
  */
-@mixin easOut {
+@mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
