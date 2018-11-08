@@ -1,11 +1,13 @@
 //$pri-color: #444;
-$pri-color: rgb(30, 39, 126);
-$sec-color: #eece1a;
-//$home-image: url(../img/background3.jpg);
-$show-home-img: true;
-$background-overlay-opacity: 0.5;
+$pri-color: rgb(61, 61, 61);
+$sec-color: #537ff7;
+$home-image: url(../img/background2.jpg);
+$show-home-img: false;
+$background-overlay-opacity: 0.9;
 
-//Random bilde for hver gang scss kompileres.
+/* //Random bilde for hver gang scss kompileres.
+
+
 $imagesarray: ("");
 @for $i from 1 through 3 {
   $imgpath: "../img/background" + $i + ".jpg";
@@ -14,6 +16,9 @@ $imagesarray: ("");
 
 $img: nth($imagesarray, random(length($imagesarray)));
 
+
+
+ */
 @mixin easOut {
   transition: all 0.5s ease-out;
 }
@@ -22,8 +27,8 @@ $img: nth($imagesarray, random(length($imagesarray)));
   @if $show-home-img {
     //Hvis jeg skulle ha behov for å fjerne bilde og bare ha en simpel bakgrunn.
     &#bg-img {
-      //background: $home-image;
-      background: url($img);
+      background: $home-image;
+      //background: url($img);
       background-attachment: fixed;
       background-size: cover;
 
