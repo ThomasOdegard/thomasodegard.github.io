@@ -96,6 +96,8 @@ $img: nth($imagesarray, random(length($imagesarray)));
 }
 
 .menu.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
