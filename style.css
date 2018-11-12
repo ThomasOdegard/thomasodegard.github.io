@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -103,6 +104,18 @@
   background: url("../img/portrett.jpg");
   border-radius: 50%;
   border: solid 3px #6db1f1;
+}
+
+.menu-branding .portrait::before {
+  content: "Thomas Ødegård";
+  color: #6db1f1;
+  text-shadow: 2px 2px #323232;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 300;
+  top: 250px;
+  margin: auto;
 }
 
 .menu .nav-item {
@@ -259,15 +272,15 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+      grid-template-areas: "om-bilde bio bio" "jobb1 jobb2 jobb3";
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
-.om-meg .bio-image {
+.om-meg .om-bilde {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: bioimage;
+  grid-area: om-bilde;
   margin: auto;
   border-radius: 50%;
   border: #6db1f1 3px solid;
@@ -281,25 +294,25 @@ main#home h1 {
   font-size: 1.5rem;
 }
 
-.om-meg .job-1 {
+.om-meg .jobb-1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: job1;
+  grid-area: jobb1;
 }
 
-.om-meg .job-2 {
+.om-meg .jobb-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: job2;
+  grid-area: jobb2;
 }
 
-.om-meg .job-3 {
+.om-meg .jobb-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
-  grid-area: job3;
+  grid-area: jobb3;
 }
 
-.om-meg .job {
+.om-meg .jobb {
   background: #184476;
   padding: 0.5rem;
   border-bottom: #6db1f1 5px solid;
@@ -445,8 +458,8 @@ main#home h1 {
     width: 150px;
     height: 150px;
   }
-  .about-info {
-        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+  .om-meg {
+        grid-template-areas: "om-bilde" "bio" "jobb1" "jobb2" "jobb3";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

@@ -79,12 +79,12 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    "om-bilde bio bio"
+    "jobb1 jobb2 jobb3";
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
-    grid-area: bioimage;
+  .om-bilde {
+    grid-area: om-bilde;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
@@ -95,19 +95,19 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
+  .jobb-1 {
+    grid-area: jobb1;
   }
 
-  .job-2 {
-    grid-area: job2;
+  .jobb-2 {
+    grid-area: jobb2;
   }
 
-  .job-3 {
-    grid-area: job3;
+  .jobb-3 {
+    grid-area: jobb3;
   }
 
-  .job {
+  .jobb {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;

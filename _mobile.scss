@@ -52,13 +52,13 @@
     }
   }
 
-  .about-info {
+  .om-meg {
     grid-template-areas:
-      "bioimage"
+      "om-bilde"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "jobb1"
+      "jobb2"
+      "jobb3";
 
     grid-template-columns: 1fr;
   }
