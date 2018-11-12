@@ -255,7 +255,7 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-.about-info {
+.om-meg {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
@@ -264,7 +264,7 @@ main#home h1 {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.about-info .bio-image {
+.om-meg .bio-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: bioimage;
@@ -273,7 +273,7 @@ main#home h1 {
   border: #6db1f1 3px solid;
 }
 
-.about-info .bio {
+.om-meg .bio {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -281,25 +281,25 @@ main#home h1 {
   font-size: 1.5rem;
 }
 
-.about-info .job-1 {
+.om-meg .job-1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: job1;
 }
 
-.about-info .job-2 {
+.om-meg .job-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: job2;
 }
 
-.about-info .job-3 {
+.om-meg .job-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: job3;
 }
 
-.about-info .job {
+.om-meg .job {
   background: #184476;
   padding: 0.5rem;
   border-bottom: #6db1f1 5px solid;
